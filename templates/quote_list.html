@@ -1,0 +1,7 @@
+<h1>Quotes Go Here</h1>
+
+{% for quote in quotes %}
+<h2>{{ quote.quote | linebreaksbr}}</h2>
+<p>--{{quote.author}}</p>
+<br/>
+{% endfor %}

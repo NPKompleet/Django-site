@@ -1,0 +1,39 @@
+{% load static %}
+
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<!-- meta http-eqiv="X-UA-Compatible" content="IE=Edge"/ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Philp's blog | {{page}}</title>
+
+		<!-- <link rel="stylesheet" type="text/css" href="../static/css/style.css" /> -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+		<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
+	</head>
+	<body>
+		<section class="main">
+		<header>
+			The Best Blog Yet
+		</header>
+		<nav>
+			<ul>
+				<li><h2><a href="">HOME</a></h2></li>
+				<li><h2><a href="">BLOG</a></h2></li>
+				<li><h2><a href="">PROJECTS</a></h2></li>
+				<li><h2><a href="/about">ABOUT</a></h2></li>
+				<li><h2><a href="">LOGIN</a></h2></li>
+			</ul>
+		</nav>
+		<!-- <img src="../static/img/python_banner.png"> -->
+		{% block content %}
+
+		{% endblock %}
+
+	</body>
+	<footer>
+		<div> &copy; copyright</div>
+
+	</footer>
+</html>

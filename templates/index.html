@@ -1,0 +1,86 @@
+{% load static %}
+
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<!-- meta http-eqiv="X-UA-Compatible" content="IE=Edge"/ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Philp's blog | {{page}}</title>
+
+		<!-- <link rel="stylesheet" type="text/css" href="../static/css/style.css" /> -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+		<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="header_h">
+					<h1>The Best Blog Yet</h1>
+				</div>
+				<nav class="header_nav">
+					<ul class="menu">
+						<li><a href="/" id="hm">HOME</a></li>
+						<li><a href="/blog" id="bg">BLOG</a></li>
+						<li><a href="/projects" id="pj">PROJECTS</a></li>
+						<li><a href="/about" id="ab">ABOUT</a></li>
+						<li><a href="" id="lg">LOGIN</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="showcase" >
+		<!-- <img src="{% static 'img/python_banner.png' %}"> -->
+			<div class="container" style='margin: 0; min-height: 400px; width:auto; background: url("{% static 'img/header.jpg' %}") no-repeat 0 -400px;'>
+				<h1>Python. Android. Cloud</h1>
+				<p>"Machines take me by surprise with great frequency"</p>
+				<span>-Alan Turing</span>
+			</div>
+		</section>
+		<section>
+			<div>
+				<a href="">Android</a>
+			</div>
+			<div>
+				<a href="">Python</a>
+			</div>
+			<div>
+				<a href="">Django</a>
+			</div>
+			<div>
+				<a href="">Flask</a>
+			</div>
+			<div>
+				<a href="">Cloud</a>
+			</div>
+		</section>
+		<footer>
+			<div> Copyright &copy;2017</div>
+		</footer>
+
+
+		<script type="text/javascript">
+			switch (document.title){
+				case "Philp's blog | Home":
+				document.getElementById("hm").style.fontWeight="bold";
+				break;
+
+				case "Philp's blog | Blog":
+				document.getElementById("bg").style.fontWeight="bold";
+				break;
+
+				case "Philp's blog | Projects":
+				document.getElementById("pj").style.fontWeight="bold";
+				break;
+
+				case "Philp's blog | About":
+				document.getElementById("ab").style.fontWeight="bold";
+				break;
+
+			}
+		</script>
+	</body>
+
+
+	
+</html>

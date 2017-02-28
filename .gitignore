@@ -1,0 +1,5 @@
+*.pyc
+*~
+db.sqlite3
+_myblog.sublime-project
+_myblog.sublime-workspace
