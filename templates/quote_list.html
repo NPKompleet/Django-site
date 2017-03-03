@@ -1,7 +1,20 @@
-<h1>Quotes Go Here</h1>
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<h1>Random Quotes and Poetry</h1>
 
 {% for quote in quotes %}
-<h2>{{ quote.quote | linebreaksbr}}</h2>
-<p>--{{quote.author}}</p>
+<div class="container">
+	<div class="post">
+		<div class="p_heading">
+			<h2>{{quote.author}}</h2>
+			
+		</div>
+		<h5 class= "quote">{{ quote.quote | linebreaksbr}}</h5>
+	</div>
+</div>
+<br/>
+<br/>
 <br/>
 {% endfor %}
+{% endblock content %}

@@ -1,3 +1,7 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+@import "https://fonts.googleapis.com/css?family=Shadows+Into+Light|Pacifico|Courgette";
+
+
 body {
 	font-family: comic, helvetica;
 	background-color: #fafafa;
@@ -9,7 +13,13 @@ body {
 .container{
 	width: 80%;
 	margin: auto;
+	overflow: auto;
 }
+
+a{
+	text-decoration: none;
+}
+
 
 header{
 	background: #000000;
@@ -42,7 +52,7 @@ header ul{
 header li{
 	float: left;
 	display: inline;
-	padding: 0 5px 0 5px;
+	padding: 0 10px 0 5px;
 }
 
 header #header_h{
@@ -50,6 +60,21 @@ header #header_h{
 }
 
 header nav{
+	float: right;
+}
+
+
+#avatar{
+	width: 28px;
+	float: right;
+	padding-top: 5px;
+}
+
+#lg{
+	/*font-size: 20px*/;
+	margin-left: 6px;
+	font-size: 15px;
+	padding: 10px 10px 0 0;
 	float: right;
 }
 
@@ -64,8 +89,84 @@ header nav{
 	font-size: 200%;
 }
 
-footer{
+#boxes{
+	margin-top: 20px;
+}
+
+#boxes .box{
+	float: left;
+	width: 30%;
+	text-align: center;
+	padding: 2% 10% 2% 10%;
+}
+
+#boxes .box a{
+	color: #000000;
+	text-decoration: none;
+	padding: 1px;
+}
+
+#boxes .box a h3{
+	padding: 0;
 	margin: 0;
+}
+
+#boxes .box img{
+	width: 90px;
+	height: 90px;
+}
+
+.post{
+	margin: auto;
+
+	width: 70%;
+	background: #fefefe;
+	text-decoration: none;
+	box-shadow: 5px 3px 5px #888888;
+	padding: 0;
+}
+
+.quote{
+	text-align: center;
+	padding: 30px;
+	font-size: 20px;
+	font-family: 'Courgette', 'Shadows Into Light', sans-serif;
+	font-style: none;
+}
+
+.post div{
+	background: #555555;
+	margin: 0;
+	border-left: #ffff00 5px solid;
+	color: #ffffff;
+	padding: 20px 10px 10px 10px;
+	min-height: 5px;
+}
+
+.post div a{
+	color: #ffffff;
+}
+
+.post div h2{
+	padding: 0;
+	margin: 0;
+}
+
+.post div h5{
+	padding: 0;
+	margin: 0;
+}
+
+.post p{
+	margin: 5px;
+	padding: 5px 10px 5px 10px;
+}
+
+
+
+
+footer{
+	margin-top: 20px;
 }
 
 footer div{
@@ -76,4 +177,3 @@ footer div{
 	background: #000000;
 	text-align: center;
 }
-

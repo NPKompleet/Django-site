@@ -24,39 +24,63 @@
 						<li><a href="/blog" id="bg">BLOG</a></li>
 						<li><a href="/projects" id="pj">PROJECTS</a></li>
 						<li><a href="/about" id="ab">ABOUT</a></li>
-						<li><a href="" id="lg">LOGIN</a></li>
+						<!-- <li><a href="" id="lg">LOGIN</a></li>
+						<li><img id="avatar" src="{% static 'img/user.svg' %}"></li> -->
 					</ul>
+					<div>
+						<a href="" id="lg">LOGIN</a>
+						<img id="avatar" src="{% static 'img/user.svg' %}">
+					</div>
 				</nav>
 			</div>
 		</header>
 		<section id="showcase" >
 		<!-- <img src="{% static 'img/python_banner.png' %}"> -->
-			<div class="container" style='margin: 0; min-height: 400px; width:auto; background: url("{% static 'img/header.jpg' %}") no-repeat 0 -400px;'>
+			<div class="container" style='margin: 0; min-height:300px; width:auto; background: url("{% static 'img/header.jpg' %}") no-repeat 0 -400px;'>
 				<h1>Python. Android. Cloud</h1>
 				<p>"Machines take me by surprise with great frequency"</p>
 				<span>-Alan Turing</span>
 			</div>
 		</section>
-		<section>
-			<div>
-				<a href="">Android</a>
+		<section id="boxes">
+			<div class="container">
+				<div class="box">
+					<a href="">
+					<img src="{% static 'img/android.svg' %}">
+					<h3>Android</h3>
+					<p>Android development using the best practices for good performance and user experience.</p>
+					</a>
+				</div>
+				<div class="box">
+					<a href="">
+					<img src="{% static 'img/Python.svg' %}">
+					<h3>Python</h3>
+					<p>Software and web development with Python. Django and Flask apps.</p>
+					</a>
+				</div>
 			</div>
-			<div>
-				<a href="">Python</a>
-			</div>
-			<div>
-				<a href="">Django</a>
-			</div>
-			<div>
-				<a href="">Flask</a>
-			</div>
-			<div>
-				<a href="">Cloud</a>
+
+			<div class="container">
+				<div class="box" >
+					<a href="">
+					<img id="cloud" src="{% static 'img/cloud.svg' %}">
+					<h3>Cloud</h3>
+					<p>Cloud computing is the wayof the future. Developing scalable apps on the google platform.</p>
+					</a>
+				</div>
+				<div class="box" >
+					<a href="">
+					<img src="{% static 'img/Capture.png' %}">
+					<p>Capture</p>
+					</a>
+				</div>
 			</div>
 		</section>
+		
 		<footer>
 			<div> Copyright &copy;2017</div>
 		</footer>
+		
 
 
 		<script type="text/javascript">
