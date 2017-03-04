@@ -126,6 +126,26 @@ header nav{
 	padding: 0;
 }
 
+.project{
+	margin: auto;
+
+	width: 400px;
+	background: #fefefe;
+	text-decoration: none;
+	box-shadow: 5px 3px 5px #888888;
+	padding: 0;
+}
+
+.project div{
+	background: #555555;
+	margin: 0;
+	border-left: #ffff00 5px solid;
+	color: #ffffff;
+	padding: 20px 10px 10px 10px;
+	min-height: 5px;
+}
+
+
 .quote{
 	text-align: center;
 	padding: 30px;

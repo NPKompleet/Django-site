@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Post, Quote
+from .models import Post, Quote, Project
 
 def post_list(request):
 	posts= Post.objects.all()
@@ -15,3 +15,8 @@ def post_detail(request, pk):
 def quote_list(request):
 	quotes= Quote.objects.all()
 	return render(request, 'quote_list.html', {'quotes': quotes, "page":"Quote"})
+
+
+def project_list(request):
+	projects= Project.objects.all()
+	return render(request, 'project_list.html', {'projects': projects, "page":"Project"})

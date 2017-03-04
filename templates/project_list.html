@@ -1,1 +1,28 @@
+
+
+{% extends 'base_generic.html' %}
+
+{% block content %}
 <h1>Projects Go Here</h1>
+
+{% for project in projects %}
+<div class="container">
+	<div class="project">
+		<div class="p_heading">
+			<h2>{{project.name}}</h2>
+			
+		</div>
+		<img src="{{project.picture.url}}" style="max-width:400px;" ><br><br>
+		<a href="{{project.git_repo}}" style="background:#000000;padding: 5px; margin:10px; border-radius:5px; " target="_blank">
+			<img style="width:15px; background:#ffffff;" src="../static/img/github.svg">
+			<span style="color:#ffffff; padding-bottom:10px; ">Code</span>
+		</a>
+		<br>
+		<p style="background:#f8f8f8;padding: 10px;">{{ project.description | linebreaksbr}}</p>
+	</div>
+</div>
+<br/>
+<br/>
+<br/>
+{% endfor %}
+{% endblock content %}

@@ -35,4 +35,11 @@ class Quote(models.Model):
 
 
 class Project(models.Model):
-	pass
+    name= models.CharField(max_length=200)
+    git_repo= models.CharField(max_length=200)
+    picture= models.FileField(null=True, blank=True)
+    purpose= models.CharField(max_length=400)
+    description= models.TextField()
+
+    def __str__(self):
+        return self.name

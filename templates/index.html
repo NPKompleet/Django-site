@@ -22,7 +22,7 @@
 					<ul class="menu">
 						<li><a href="/" id="hm">HOME</a></li>
 						<li><a href="/blog" id="bg">BLOG</a></li>
-						<li><a href="/projects" id="pj">PROJECTS</a></li>
+						<li><a href="/project" id="pj">PROJECTS</a></li>
 						<li><a href="/about" id="ab">ABOUT</a></li>
 						<!-- <li><a href="" id="lg">LOGIN</a></li>
 						<li><img id="avatar" src="{% static 'img/user.svg' %}"></li> -->
@@ -69,9 +69,10 @@
 					</a>
 				</div>
 				<div class="box" >
-					<a href="">
-					<img src="{% static 'img/Capture.png' %}">
-					<p>Capture</p>
+					<a href="/quote">
+					<img src="{% static 'img/quotes.svg' %}">
+					<h3>Quotes and poetry</h3>
+					<p>Random quotes and poetry to help you through the day</p>
 					</a>
 				</div>
 			</div>
@@ -93,7 +94,7 @@
 				document.getElementById("bg").style.fontWeight="bold";
 				break;
 
-				case "Philp's blog | Projects":
+				case "Philp's blog | Project":
 				document.getElementById("pj").style.fontWeight="bold";
 				break;
 

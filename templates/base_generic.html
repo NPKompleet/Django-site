@@ -13,27 +13,103 @@
 		<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
 	</head>
 	<body>
-		<section class="main">
 		<header>
-			The Best Blog Yet
+			<div class="container">
+				<div id="header_h">
+					<h1>The Best Blog Yet</h1>
+				</div>
+				<nav class="header_nav">
+					<ul class="menu">
+						<li><a href="/" id="hm">HOME</a></li>
+						<li><a href="/blog" id="bg">BLOG</a></li>
+						<li><a href="/project" id="pj">PROJECTS</a></li>
+						<li><a href="/about" id="ab">ABOUT</a></li>
+						<!-- <li><a href="" id="lg">LOGIN</a></li>
+						<li><img id="avatar" src="{% static 'img/user.svg' %}"></li> -->
+					</ul>
+					<div>
+						<a href="" id="lg">LOGIN</a>
+						<img id="avatar" src="{% static 'img/user.svg' %}">
+					</div>
+				</nav>
+			</div>
 		</header>
-		<nav>
-			<ul>
-				<li><h2><a href="">HOME</a></h2></li>
-				<li><h2><a href="">BLOG</a></h2></li>
-				<li><h2><a href="">PROJECTS</a></h2></li>
-				<li><h2><a href="/about">ABOUT</a></h2></li>
-				<li><h2><a href="">LOGIN</a></h2></li>
-			</ul>
-		</nav>
-		<!-- <img src="../static/img/python_banner.png"> -->
+		<!-- <section id="showcase" >
+		<!-- <img src="{% static 'img/python_banner.png' %}"> -->
+			<!-- <div class="container" style='margin: 0; min-height:300px; width:auto; background: url("{% static 'img/header.jpg' %}") no-repeat 0 -400px;'>
+				<h1>Python. Android. Cloud</h1>
+				<p>"Machines take me by surprise with great frequency"</p>
+				<span>-Alan Turing</span>
+			</div>
+		</section>
+		<section id="boxes">
+			<div class="container">
+				<div class="box">
+					<a href="">
+					<img src="{% static 'img/android.svg' %}">
+					<h3>Android</h3>
+					<p>Android development using the best practices for good performance and user experience.</p>
+					</a>
+				</div>
+				<div class="box">
+					<a href="">
+					<img src="{% static 'img/Python.svg' %}">
+					<h3>Python</h3>
+					<p>Software and web development with Python. Django and Flask apps.</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="box" >
+					<a href="">
+					<img id="cloud" src="{% static 'img/cloud.svg' %}">
+					<h3>Cloud</h3>
+					<p>Cloud computing is the wayof the future. Developing scalable apps on the google platform.</p>
+					</a>
+				</div>
+				<div class="box" >
+					<a href="/quote">
+					<img src="{% static 'img/quotes.svg' %}">
+					<h3>Quotes and poetry</h3>
+					<p>Random quotes and poetry to help you through the day</p>
+					</a>
+				</div>
+			</div>
+		</section> -->
+
 		{% block content %}
 
 		{% endblock %}
 
-	</body>
-	<footer>
-		<div> &copy; copyright</div>
+		<footer>
+			<div> Copyright &copy;2017</div>
+		</footer>
+		
 
-	</footer>
+
+		<script type="text/javascript">
+			switch (document.title){
+				case "Philp's blog | Home":
+				document.getElementById("hm").style.fontWeight="bold";
+				break;
+
+				case "Philp's blog | Blog":
+				document.getElementById("bg").style.fontWeight="bold";
+				break;
+
+				case "Philp's blog | Project":
+				document.getElementById("pj").style.fontWeight="bold";
+				break;
+
+				case "Philp's blog | About":
+				document.getElementById("ab").style.fontWeight="bold";
+				break;
+
+			}
+		</script>
+	</body>
+
+
+	
 </html>
